@@ -12,7 +12,7 @@ const MassalaSurvey = () => {
         </a>
 
         <a href='#' className='flex items-center bg-blue-500 h-40 hover:bg-blue-400 transition duration-500 ease-in-out'>
-          <Survey className='w-24 ml-2' /> ސާވޭ
+          <Survey className='w-24 h-24 ml-2' /> ސާވޭ
         </a>
       </div>
 
