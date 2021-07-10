@@ -20,11 +20,11 @@ const FormContent = (props) => {
     <div className='sm:px-52 px-2 sm:grid sm:grid-cols-3 block flex flex-col font-waheed leading-loose'>
       {formContent.map((content, i) => {
         if ((formContent.length - 1) === i) {
-          return <a href='#' key={content.title} className={`${content.class} bg-cover opacity-70 hover:opacity-100 text-2xl flex justify-center items-center py-8 px-4 bg-gray-300 m-1 col-span-2`}>{content.title}</a>
+          return <a href='#' key={content.title} className={`${content.class} bg-cover text-2xl flex justify-center items-center py-8 px-4 bg-yellow-300 hover:bg-yellow-400 m-1 col-span-2`}>{content.title}</a>
         } else if ((formContent.length - 2) === i) {
-          return <a href='#' key={content.title} className={`${content.class} row-span-2 bg-cover hover:text-gray-200 opacity-70 hover:opacity-100 text-2xl flex justify-center items-center py-8 px-4 bg-gray-300 m-1 hover:bg-gray-400 hover:text-xl`}>{content.title}</a>
+          return <a href='#' key={content.title} className={`${content.class} text-white h-40 sm:h-auto row-span-2 bg-cover hover:text-gray-100 sm:opacity-70 sm:hover:opacity-100 text-2xl flex justify-center items-center py-8 px-4 bg-gray-300 m-1 hover:bg-gray-400 transition-all`}><span className='bg-gray-900 py-2 px-10 rounded opacity-75'>{content.title}</span></a>
         } else {
-          return <a href='#' key={content.title} className={`${content.class} bg-cover hover:text-teal transform hover:text-3xl opacity-70 hover:opacity-100 text-2xl flex justify-center items-center py-8 px-4 bg-gray-300 m-1 hover:bg-gray-700 h-40`} > {content.title}</a>
+          return <a href='#' key={content.title} style={{ 'font-size': '1.5rem' }} className={`${content.class} bg-cover hover:text-gray-100 sm:opacity-70 sm:hover:opacity-100 flex justify-center items-center py-8 px-4 m-1 text-white hover:bg-black h-40 transition-all`} > <span className='bg-gray-900 py-0 px-10 rounded opacity-75'>{content.title}</span></a>
         }
 
       })}
