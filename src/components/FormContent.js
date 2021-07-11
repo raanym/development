@@ -24,7 +24,7 @@ const FormContent = (props) => {
         } else if ((formContent.length - 2) === i) {
           return <a href='#' key={content.title} className={`${content.class} text-white h-40 sm:h-auto row-span-2 bg-cover hover:text-gray-100 sm:opacity-70 sm:hover:opacity-100 text-2xl flex justify-center items-center py-8 px-4 bg-gray-300 m-1 hover:bg-gray-400 transition-all`}><span className='bg-gray-900 py-2 px-10 rounded opacity-75'>{content.title}</span></a>
         } else {
-          return <a href='#' key={content.title} style={{ 'font-size': '1.5rem' }} className={`${content.class} bg-cover hover:text-gray-100 sm:opacity-70 sm:hover:opacity-100 flex justify-center items-center py-8 px-4 m-1 text-white hover:bg-black h-40 transition-all`} > <span className='bg-gray-900 py-0 px-10 rounded opacity-75'>{content.title}</span></a>
+          return <a href='#' key={content.title} style={{ 'font-size': '1.5rem' }} className={`${content.class} bg-cover hover:text-gray-100 sm:opacity-70 sm:hover:opacity-100 flex justify-center items-center py-8 px-4 m-1 text-white hover:bg-black h-40 md:h-60 transition-all`} > <span className='bg-gray-900 py-0 px-10 rounded opacity-75'>{content.title}</span></a>
         }
 
       })}
