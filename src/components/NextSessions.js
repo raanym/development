@@ -1,18 +1,20 @@
 import { ReactComponent as DateIcon } from '../img/dateIcon.svg';
+import { ReactComponent as Clock } from '../img/clock.svg';
+import { ReactComponent as Zoom } from '../img/zoom.svg';
 
 const NextSessions = (props) => {
 
   const sessions = [
-    { name: 'ވިޔަފާރި', date: new Date('July 12 2021 10:00'), area: 'ނޫ އިޤްތިޞާދު' },
-    { name: 'މަސްވެރިކަން', date: new Date('July 12 2021 20:30'), area: 'ނޫ އިޤްތިޞާދު' },
-    { name: 'ފަތުރުވެރިކަން', date: new Date('July 13 20 21 10:00'), area: 'ނޫ އިޤްތިޞާދު' },
-    { name: 'ދަނޑުވެރިކަން', date: new Date('July 13 2021 20:30'), area: 'ނޫ އިޤްތިޞާދު' },
-    { name: 'ޞިއްހަތު', date: new Date('July 14 2021 11:00'), area: 'އޯގާތެރި ސަރުކާރު' },
-    { name: 'ތަޢުލީމު', date: new Date('July 14 2021 14:00'), area: 'އޯގާތެރި ސަރުކާރު' },
-    { name: 'ޒުވާނުން', date: new Date('July 15 2021 10:00'), area: 'ފަޙުރުވެރި ޢާއިލާ' },
-    { name: 'ކުޅިވަރު', date: new Date('July 15 2021 14:00'), area: 'ފަޙުރުވެރި ޢާއިލާ' },
-    { name: 'ޖައްމިއްޔާ ޖަމާއައްތައް', date: new Date('July 16 2021 10:00'), area: 'ފަޙުރުވެރި ޢާއިލާ' },
-    { name: 'ދީން', date: new Date('July 16 2021 14:00'), area: 'ފަޙުރުވެރި ޢާއިލާ' },
+    { name: 'ވިޔަފާރި', date: new Date('July 12 2021 10:00'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
+    { name: 'މަސްވެރިކަން', date: new Date('July 12 2021 20:30'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
+    { name: 'ފަތުރުވެރިކަން', date: new Date('July 13 20 21 10:00'), area: 'ނޫ އިޤްތިޞާދު', link: 'text' },
+    { name: 'ދަނޑުވެރިކަން', date: new Date('July 13 2021 20:30'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
+    { name: 'ޞިއްހަތު', date: new Date('July 14 2021 11:00'), area: 'އޯގާތެރި ސަރުކާރު', link: '' },
+    { name: 'ތަޢުލީމު', date: new Date('July 14 2021 14:00'), area: 'އޯގާތެރި ސަރުކާރު', link: '' },
+    { name: 'ޒުވާނުން', date: new Date('July 15 2021 10:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
+    { name: 'ކުޅިވަރު', date: new Date('July 15 2021 14:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
+    { name: 'ޖައްމިއްޔާ ޖަމާއައްތައް', date: new Date('July 16 2021 10:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
+    { name: 'ދީން', date: new Date('July 16 2021 14:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
   ]
 
   const today = new Date();
@@ -71,12 +73,23 @@ const NextSessions = (props) => {
     <div className='sm:px-52 px-4 font-faseyha bg-yellow-100'>
       <div className='p-6 text-line mt-4'>
         <h2 className='font-waheed text-xl sm:text-3xl'>ކުރިއަށް ހުރި ސެޝަންތައް</h2>
-        <div className='grid grid-cols-2 sm:grid-cols-4 gap-y-10 gap-x-4 sm:gap-0  py-2'>
+        <div className='grid grid-cols-1 sm:grid-cols-4 gap-y-10 gap-x-4 sm:gap-4 p-2 mt-2'>
           {filteredSessions.map(session => {
-            return <div key={session.name} className='m-2'>
-              <p className='bg-yellow-400 py-1 px-2'>{session.name} <span className='text-gray-800'>({session.area})</span></p>
-              <p><DateIcon className='h-6 inline' /> {`${session.date.getDate()} ${dateTime(session.date.getMonth())} ${session.date.getFullYear()}`}</p>
-              <p>{`${session.date.getHours()}:${session.date.getSeconds()}0`}</p>
+            return <div key={session.name} className='font-bold'>
+              <h3 className='bg-yellow-400 py-1 px-2 mb-1'>{session.name}</h3>
+              <div>
+                <DateIcon className='mb-1 h-4 w-6 inline' />
+                <p className='px-2 inline'>{`${session.date.getDate()} ${dateTime(session.date.getMonth())} ${session.date.getFullYear()}`}</p>
+              </div>
+              <div>
+                <Clock className='h-6 w-auto inline' />
+                <p className='inline px-2'>{`${session.date.getHours()}:${session.date.getSeconds()}0`}</p>
+              </div>
+              <div>
+                <Zoom className='h-6 w-auto inline ml-2' />
+                <a href={session.link} className='px-1text-gray-800 hover:text-yellow-500'>
+                  ޒޫމް ލިންކް</a>
+              </div>
             </div>
           })}
         </div>

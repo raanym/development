@@ -7,7 +7,6 @@ const Header = () => {
   return (
     <div className='py-2 bg-gray-50'>
       <HeaderTop />
-      <HeaderBottom />
     </div>
   );
 }
