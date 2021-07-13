@@ -1,18 +1,17 @@
 import { ReactComponent as Idea } from '../img/idea.svg';
-import './FormContent.css';
 
 const FormContent = (props) => {
 
   const formContent = [
-    { title: 'ތޫނޑު', class: 'form-el bg-thundi', link: 'https://forms.gle/FDfzMtjprBPwTYB9A' },
-    { title: 'ބަނދަރޮ ސަރަހައްދު', class: 'form-el bg-harbour', link: 'https://forms.gle/eLQJF7M5yb2HeHf1A' },
-    { title: 'ބިޅިފޭށި', class: 'form-el bg-bilhifeyshi', link: 'https://forms.gle/LkcKrUpFBEbrPpDU6' },
-    { title: 'ރަސްމީ ބޯޅަދަނޑޮ', class: 'form-el bg-rasmee-dhandu', link: 'https://forms.gle/w13EQMeiz1aryVQh9' },
-    { title: 'ދަޑިމަގި ކިޅިއާ ވީދަޑޮ', class: 'form-el bg-dkilhi', link: ': https://forms.gle/S2N9LAGqmQ99NgJ46' },
-    { title: 'ބަންޑާރަކިޅިއާ ވީދަޑޮ', class: 'form-el bg-bkilhi', link: 'https://forms.gle/vAwfZYfFR7oR3zdq6' },
-    { title: 'މާދަޑު ސްޕޯޓްސް އެރީނާ', class: 'form-el bg-scomplex', link: 'https://forms.gle/HtoskikYoEk3SdL5A' },
-    { title: 'ދޫނޑިގަން ސްޕޯޓްސް އެރީނާ', class: 'form-el bg-dhg-arena', link: 'https://forms.gle/ugrrfVCmTVwA71gZA' },
-    { title: 'ދަޑިމަގި ސްޕޯޓްސް އެރީނާ', class: 'form-el bg-dha-arena', link: 'https://forms.gle/5iUwWxVeQcFsuEv56' },
+    { title: 'ތޫނޑު', class: 'bg-thundi', link: 'https://forms.gle/FDfzMtjprBPwTYB9A' },
+    { title: 'ބަނދަރޮ ސަރަހައްދު', class: 'bg-harbour', link: 'https://forms.gle/eLQJF7M5yb2HeHf1A' },
+    { title: 'ބިޅިފޭށި', class: 'bg-bilhifeyshi', link: 'https://forms.gle/LkcKrUpFBEbrPpDU6' },
+    { title: 'ރަސްމީ ބޯޅަދަނޑޮ', class: 'bg-rasmee-dhandu', link: 'https://forms.gle/w13EQMeiz1aryVQh9' },
+    { title: 'ދަޑިމަގި ކިޅި / ވީދަޑޮ', class: 'bg-dkilhi', link: 'https://forms.gle/S2N9LAGqmQ99NgJ46' },
+    { title: 'ބަންޑާރަކިޅި / ވީދަޑޮ', class: 'bg-bkilhi', link: 'https://forms.gle/vAwfZYfFR7oR3zdq6' },
+    { title: 'މާދަޑޮ ސްޕޯޓްސް އެރީނާ', class: 'bg-scomplex', link: 'https://forms.gle/HtoskikYoEk3SdL5A' },
+    { title: 'ދޫނޑިގަން ސްޕޯޓްސް އެރީނާ', class: 'bg-dhg-arena', link: 'https://forms.gle/ugrrfVCmTVwA71gZA' },
+    { title: 'ދަޑިމަގޮ ސްޕޯޓްސް އެރީނާ', class: 'bg-dha-arena', link: 'https://forms.gle/5iUwWxVeQcFsuEv56' },
     { title: 'އެހެން ސަރަހައްދެއްވެސް ތަރައްޤީކުރަން ޚިޔާލެއްވާނަމަ ފޮނުވައިދެއްވާ', link: 'https://forms.gle/jKoMokA8MEfnAVDU8' }
   ]
 

@@ -8,23 +8,22 @@ const NextSessions = (props) => {
     { name: 'ވިޔަފާރި', date: new Date('July 12 2021 10:00'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
     { name: 'މަސްވެރިކަން', date: new Date('July 12 2021 20:30'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
     { name: 'ފަތުރުވެރިކަން', date: new Date('July 13 20 21 10:00'), area: 'ނޫ އިޤްތިޞާދު', link: 'text' },
-    { name: 'ދަނޑުވެރިކަން', date: new Date('July 13 2021 20:30'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
-    { name: 'ޞިއްހަތު', date: new Date('July 14 2021 11:00'), area: 'އޯގާތެރި ސަރުކާރު', link: '' },
+    { name: 'ދަނޑޮވެރިކަން', date: new Date('July 13 2021 20:30'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
+    { name: 'ޞިއްހަތޮ', date: new Date('July 14 2021 11:00'), area: 'އޯގާތެރި ސަރުކާރު', link: '' },
     { name: 'ތަޢުލީމު', date: new Date('July 14 2021 14:00'), area: 'އޯގާތެރި ސަރުކާރު', link: '' },
     { name: 'ޒުވާނުން', date: new Date('July 15 2021 10:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
-    { name: 'ކުޅިވަރު', date: new Date('July 15 2021 14:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
-    { name: 'ޖައްމިއްޔާ ޖަމާއައްތައް', date: new Date('July 16 2021 10:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
+    { name: 'ކުޅިވަރޮ', date: new Date('July 15 2021 14:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
+    { name: 'ޖައްމިއްޔާ ޖަމާއައްތެއް', date: new Date('July 16 2021 10:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
     { name: 'ދީން', date: new Date('July 16 2021 14:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
   ]
 
   const today = new Date();
 
   const filteredSessions = sessions.filter((session, i) => {
-    if (session.date.getDate() >= today.getDate() && i <= 4) {
+    if (session.date.getDate() >= today.getDate() && session.date.getDate() <= today.getDate() + 2) {
       return session;
     }
   });
-
 
   const dateTime = (date) => {
     let month;
@@ -72,7 +71,7 @@ const NextSessions = (props) => {
   return (
     <div className='sm:px-52 px-4 font-faseyha bg-yellow-100'>
       <div className='p-6 text-line mt-4'>
-        <h2 className='font-waheed text-xl sm:text-3xl'>ކުރިއަށް ހުރި ސެޝަންތައް</h2>
+        <h2 className='font-waheed text-xl sm:text-3xl'>ކުރިހާ ތީ ސެޝަންތެއް</h2>
         <div className='grid grid-cols-1 sm:grid-cols-4 gap-y-10 gap-x-4 sm:gap-4 p-2 mt-2'>
           {filteredSessions.map(session => {
             return <div key={session.name} className='font-bold'>
