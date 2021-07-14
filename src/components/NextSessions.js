@@ -69,24 +69,24 @@ const NextSessions = (props) => {
   }
 
   return (
-    <div className='sm:px-52 px-4 font-faseyha bg-tealLight'>
-      <div className='p-6 text-line mt-4'>
-        <h2 className='font-waheed text-xl sm:text-3xl'>ކުރިހާ ތީ ސެޝަންތެއް</h2>
-        <div className='grid grid-cols-1 sm:grid-cols-4 gap-y-10 gap-x-4 sm:gap-4 p-2 mt-2'>
+    <div className='sm:px-52 px-4 font-faseyha bg-customGreen'>
+      <div className='p-6 mt-6'>
+        <h2 className='font-waheed text-2xl sm:text-3xl'>ކުރިހާ ތީ ސެޝަންތެއް</h2>
+        <div className='grid grid-cols-1 gap-y-10 sm:grid-cols-4 sm:gap-y-8 sm:gap-x-10 sm:gap-4 p-2 mt-2'>
           {filteredSessions.map(session => {
-            return <div key={session.name} className='font-bold'>
-              <h3 className='bg-tealShade rounded py-1 px-2 mb-1'>{session.name}</h3>
-              <div>
-                <DateIcon className='mb-1 h-4 w-6 inline' />
+            return <div key={session.name} className='font-bold text-xl'>
+              <h3 className='bg-customGreenLight rounded py-1 px-2 mb-2'>{session.name}</h3>
+              <div className=''>
+                <DateIcon className=' h-8 w-auto inline' />
                 <p className='px-2 inline'>{`${session.date.getDate()} ${dateTime(session.date.getMonth())} ${session.date.getFullYear()}`}</p>
               </div>
-              <div>
-                <Clock className='h-6 w-auto inline' />
+              <div className='mt-2'>
+                <Clock className='w-auto inline' style={{ height: '2.2rem' }} />
                 <p className='inline px-2'>{`${session.date.getHours()}:${session.date.getSeconds()}0`}</p>
               </div>
-              <div>
-                <Zoom className='h-6 w-auto inline ml-2' />
-                <a href={session.link} className='px-1text-gray-800 hover:text-yellow-500'>
+              <div className='mt-1'>
+                <Zoom className='h-8 w-auto inline ml-2' />
+                <a href={session.link} className='text-black hover:text-white'>
                   ޒޫމް ލިންކް</a>
               </div>
             </div>

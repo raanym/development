@@ -5,14 +5,10 @@ const MassalaSurvey = () => {
 
 
   return (
-    <div className='sm:px-52 px-4 font-waheed text-3xl mt-10'>
-      <div className='sm:grid sm:grid-cols-2 sm:justify-center sm:items-center sm:gap-2'>
-        <a href='https://forms.gle/jKoMokA8MEfnAVDU8' target='_blank' className='flex items-center bg-yellow-500 h-40 md:h-60 md:text-4xl md:leading-relaxed mb-2 sm:mb-0 hover:bg-yellow-400 transition'>
+    <div className='sm:px-52 px-4 font-waheed text-3xl mt-6'>
+      <div className='sm:grid sm:grid-cols-1 sm:items-center sm:gap-2'>
+        <a href='https://forms.gle/jKoMokA8MEfnAVDU8' target='_blank' className='flex items-center bg-customYellow md:h-40 md:text-4xl md:leading-relaxed mb-2 sm:mb-0 hover:bg-yellow-500 transition'>
           <Complaint className='w-24 ml-2' /> ތަރައްޤީއާ ކުރިއެރުމަހަ އާންމުކޮހޮ ހުށަހަޅާ ޚިޔާލަ އަދި ލަފާ
-        </a>
-
-        <a href='#' className='flex items-center bg-blue-500 h-40 md:h-60 md:text-4xl hover:bg-blue-400 transition'>
-          <Survey className='w-24 h-24 ml-2' /> ސާވޭ
         </a>
       </div>
 

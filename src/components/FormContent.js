@@ -14,7 +14,7 @@ const FormContent = (props) => {
     { title: 'ދަޑިމަގޮ ސްޕޯޓްސް އެރީނާ', class: 'bg-dha-arena', link: 'https://forms.gle/5iUwWxVeQcFsuEv56' },
     { title: 'ފުވައްމުލައް ސްޓޭޑިއަމް', class: 'bg-stadium', link: 'https://forms.gle/5iUwWxVeQcFsuEv56' },
     { title: 'ކަނދޮވަލި ދަޑޮ', class: 'bg-kandhoval', link: 'https://forms.gle/5iUwWxVeQcFsuEv56' },
-    { title: 'އެހެން ސަރަހައްދެއްވެސް ތަރައްޤީކުރަން ޚިޔާލެއްވާނަމަ ފޮނުވައިދެއްވާ', link: 'https://forms.gle/jKoMokA8MEfnAVDU8' }
+    { title: 'އެހެން ސަރަހައްދެކިސް ތަރައްޤީކެރަންނަ ޚިޔާލައްވެނީފަހޭ ފެނޮވާދިނުން އެދެން', link: 'https://forms.gle/jKoMokA8MEfnAVDU8' }
   ]
 
 
@@ -22,11 +22,14 @@ const FormContent = (props) => {
     <div className='sm:px-52 px-2 sm:grid sm:grid-cols-3 block flex flex-col font-waheed leading-loose'>
       {formContent.map((content, i) => {
         if ((formContent.length - 1) === i) {
-          return <a href={content.link} target='_blank' key={content.title} className={`${content.class} bg-cover text-2xl flex justify-center items-center py-8 px-4 bg-blue-500 hover:bg-blue-400 m-1 col-span-2`}><Idea className='inline h-20 ml-4' />{content.title}</a>
+          return <a href={content.link} target='_blank' key={content.title} className={`${content.class} text-white text-2xl flex justify-center items-center py-8 px-4 bg-customBlue hover:bg-blue-700 m-1 col-span-2`}><Idea className='inline h-20 ml-4' />{content.title}</a>
+        } else if ((formContent.length - 3) === i) {
+          return <a href={content.link} target='_blank' key={content.title} className={`${content.class} text-white h-40 col-span-2 bg-cover bg-center hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 text-2xl flex justify-center items-center py-8 px-4 bg-gray-300 m-1 hover:bg-gray-400 transition-all`}><span className='bg-gray-100 rounded text-black py-2 px-10'>{content.title}</span></a>
         } else if ((formContent.length - 2) === i) {
-          return <a href={content.link} target='_blank' key={content.title} className={`${content.class} text-white h-40 sm:h-auto row-span-2 bg-cover hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 text-2xl flex justify-center items-center py-8 px-4 bg-gray-300 m-1 hover:bg-gray-400 transition-all`}><span className='bg-gray-900 py-2 px-10'>{content.title}</span></a>
-        } else {
-          return <a href={content.link} target='_blank' key={content.title} style={{ 'font-size': '1.5rem' }} className={`${content.class} bg-cover hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 flex justify-center items-center py-8 px-4 m-1 text-white h-40 md:h-60 transition-all`} > <span className='bg-gray-900 py-0 px-10'>{content.title}</span></a>
+          return <a href={content.link} target='_blank' key={content.title} className={`${content.class} text-black h-40 sm:h-auto row-span-2 bg-cover bg-center hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 text-2xl flex justify-center items-center py-8 px-4 m-1 hover:bg-gray-400 transition-all`}><span className='bg-gray-100 rounded text-black py-2 px-10'>{content.title}</span></a>
+        }
+        else {
+          return <a href={content.link} target='_blank' key={content.title} style={{ 'font-size': '1.5rem' }} className={`${content.class} bg-cover bg-center hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 flex justify-center items-center py-8 px-4 m-1 text-white h-40 md:h-60 transition-all`} > <span className='bg-gray-200 rounded text-black py-0 px-10'>{content.title}</span></a>
         }
 
       })}

@@ -6,6 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        customGreen: '#48A842',
+        customGreenLight: '#2F7B2A',
+        customYellow: '#FFC20E',
+        customYellowy: '#FFE77AFF',
+        customBlue: '#005AE3',
         teal: '#008080',
         tealLight: '#BBF1F1',
         tealLighter: '#AFEEEE',
@@ -27,6 +32,7 @@ module.exports = {
         'dha-arena': "url('img/dhadimago-arena.jpg')",
         'stadium': "url('img/stadium.jpg')",
         'kandhoval': "url('img/kandhoval.jpg')",
+        'fvm': "url('img/fvm.jpg')",
       },
     },
   },
