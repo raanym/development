@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       colors: {
         teal: '#008080',
+        tealLight: '#BBF1F1',
+        tealLighter: '#AFEEEE',
+        tealShade: '#007788',
       },
       fontFamily: {
         waheed: ['MV_Waheed'],
@@ -22,6 +25,8 @@ module.exports = {
         'scomplex': "url('img/sports-arena.jpg')",
         'dhg-arena': "url('img/dhoodigan-arena.jpg')",
         'dha-arena': "url('img/dhadimago-arena.jpg')",
+        'stadium': "url('img/stadium.jpg')",
+        'kandhoval': "url('img/kandhoval.jpg')",
       },
     },
   },
