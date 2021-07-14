@@ -75,7 +75,7 @@ const NextSessions = (props) => {
         <div className='grid grid-cols-1 sm:grid-cols-4 gap-y-10 gap-x-4 sm:gap-4 p-2 mt-2'>
           {filteredSessions.map(session => {
             return <div key={session.name} className='font-bold'>
-              <h3 className='bg-tealShade py-1 px-2 mb-1'>{session.name}</h3>
+              <h3 className='bg-tealShade rounded py-1 px-2 mb-1'>{session.name}</h3>
               <div>
                 <DateIcon className='mb-1 h-4 w-6 inline' />
                 <p className='px-2 inline'>{`${session.date.getDate()} ${dateTime(session.date.getMonth())} ${session.date.getFullYear()}`}</p>
