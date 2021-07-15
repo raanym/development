@@ -3,6 +3,7 @@ import { ReactComponent as Clock } from '../img/clock.svg';
 import { ReactComponent as Zoom } from '../img/zoom.svg';
 import { ReactComponent as FB } from '../img/fb-meet.svg';
 import { ReactComponent as ClubHouse } from '../img/Clubhouse.svg';
+import { ReactComponent as Minus } from '../img/minus.svg';
 
 const NextSessions = (props) => {
 
@@ -31,7 +32,7 @@ const NextSessions = (props) => {
               </div>
               <div className='mt-2'>
                 <Clock className='w-auto inline' style={{ height: '2.2rem' }} />
-                <p className='inline px-2'>{`${session.date.getHours()}:${session.date.getSeconds()}0`}</p>
+                <p className='inline px-2'>{`${session.date.getHours()}:${(session.date.getMinutes() === 0) ? '00' : session.date.getMinutes()}`}</p>
               </div>
               <div className='mt-2 border-t border-customGreenLight'>
                 {(session.zoom === '')
@@ -49,7 +50,7 @@ const NextSessions = (props) => {
             </div>
           })}
         </div>
-        <button className='bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}>ކުރިއެ ސަފުހާ</button>
+        <button className='flex items-center bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}><Minus className='ml-3 h-8 w-8' /> މަދުން ސެޝަންތެއް</button>
       </div>
     </div >
   )
