@@ -2,15 +2,16 @@ import { ReactComponent as DateIcon } from '../img/dateIcon.svg';
 import { ReactComponent as Clock } from '../img/clock.svg';
 import { ReactComponent as Zoom } from '../img/zoom.svg';
 
-const NextSessions = (props) => {
+
+const Next2Sessions = (props) => {
 
   const today = new Date();
 
-  // const filteredSessions = props.sessions.filter((session, i) => {
-  //   if (session.date.getDate() >= today.getDate() && session.date.getDate() <= today.getDate() + 2) {
-  //     return session;
-  //   }
-  // });
+  const filteredSessions = props.sessions.filter((session, i) => {
+    if (session.date.getDate() >= today.getDate()) {
+      return session;
+    }
+  }).slice(0, 2);
 
   const dateTime = (date) => {
     let month;
@@ -55,6 +56,7 @@ const NextSessions = (props) => {
     return month;
   }
 
+
   const buttonHandler = () => {
     props.click();
   }
@@ -62,9 +64,9 @@ const NextSessions = (props) => {
   return (
     <div className='sm:px-52 px-4 font-faseyha bg-customGreen h-auto'>
       <div className='p-6 mt-6'>
-        <h2 className='font-waheed text-2xl sm:text-3xl'>ހުށިހައި ސެޝަންތެއް</h2>
+        <h2 className='font-waheed text-2xl sm:text-3xl'>ކުރިހާ އޮތް 2 ސެޝަންތެއް</h2>
         <div className='grid grid-cols-1 gap-y-10 sm:grid-cols-4 sm:gap-y-8 sm:gap-x-10 sm:gap-4 p-2 mt-2'>
-          {props.sessions.map(session => {
+          {filteredSessions.map(session => {
             return <div key={session.name} className='font-bold text-xl'>
               <h3 className='bg-customGreenLight rounded py-1 px-2 mb-2'>{session.name}</h3>
               <div className=''>
@@ -83,10 +85,10 @@ const NextSessions = (props) => {
             </div>
           })}
         </div>
-        <button className='bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}>ކުރީގެ ޕޭޖަހަ</button>
+        <button className='bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}>އިތުރު ސެޝަންތައް</button>
       </div>
     </div >
   )
 }
 
-export default NextSessions;
+export default Next2Sessions;

@@ -12,9 +12,9 @@ const FormContent = (props) => {
     { title: 'މާދަޑޮ ސްޕޯޓްސް އެރީނާ', class: 'bg-scomplex', link: 'https://forms.gle/HtoskikYoEk3SdL5A' },
     { title: 'ދޫނޑިގަން ސްޕޯޓްސް އެރީނާ', class: 'bg-dhg-arena', link: 'https://forms.gle/ugrrfVCmTVwA71gZA' },
     { title: 'ދަޑިމަގޮ ސްޕޯޓްސް އެރީނާ', class: 'bg-dha-arena', link: 'https://forms.gle/5iUwWxVeQcFsuEv56' },
-    { title: 'ފުވައްމުލައް ސްޓޭޑިއަމް', class: 'bg-stadium', link: 'https://forms.gle/5iUwWxVeQcFsuEv56' },
-    { title: 'ކަނދޮވަލި ދަޑޮ', class: 'bg-kandhoval', link: 'https://forms.gle/5iUwWxVeQcFsuEv56' },
-    { title: 'އެހެން ސަރަހައްދެކިސް ތަރައްޤީކެރަންނަ ޚިޔާލައްވެނީފަހޭ ފެނޮވާދިނުން އެދެން', link: 'https://forms.gle/jKoMokA8MEfnAVDU8' }
+    { title: 'ފުވައްމުލައް ސްޓޭޑިއަމް', class: 'bg-stadium', link: 'https://forms.gle/mse5iMy8H5tvc1W97' },
+    { title: 'ކަނދޮވަލި ދަޑޮ', class: 'bg-kandhoval', link: 'https://forms.gle/4pPRpp5M9i24qAiH9' },
+    { title: 'އެހެން ސަރަހައްދަކިސް ތަރައްގީ ކެރަންނަ ޚިޔާލާއް އޮއްފަހެނާ ފެނޮވާދިނުން އެދެން', link: 'https://forms.gle/8XL8wUEieRpH6wJP9' }
   ]
 
 
