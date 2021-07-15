@@ -60,13 +60,13 @@ const NextSessions = (props) => {
   }
 
   return (
-    <div className='sm:px-52 px-4 font-faseyha bg-customGreen h-auto'>
-      <div className='p-6 mt-6'>
+    <div className='lg:px-52 sm:px-4 px-4 font-faseyha bg-customGreen h-auto'>
+      <div className='sm:p-6 mt-6'>
         <h2 className='font-waheed text-2xl sm:text-3xl'>ހުށިހައި ސެޝަންތެއް</h2>
-        <div className='grid grid-cols-1 gap-y-10 sm:grid-cols-4 sm:gap-y-8 sm:gap-x-10 sm:gap-4 p-2 mt-2'>
+        <div className='grid grid-cols-1 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-y-8 sm:gap-4 sm:gap-x-2 md:gap-x-4 lg:gap-x-10 md:gap-4 p-2 mt-2'>
           {props.sessions.map(session => {
             return <div key={session.name} className='font-bold text-xl'>
-              <h3 className='bg-customGreenLight rounded py-1 px-2 mb-2'>{session.name}</h3>
+              <h3 className='bg-customGreenLight rounded py-2 px-2 mb-2'>{session.name}</h3>
               <div className=''>
                 <DateIcon className=' h-8 w-auto inline' />
                 <p className='px-2 inline'>{`${session.date.getDate()} ${dateTime(session.date.getMonth())} ${session.date.getFullYear()}`}</p>
@@ -83,7 +83,7 @@ const NextSessions = (props) => {
             </div>
           })}
         </div>
-        <button className='bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}>ކުރީގެ ޕޭޖަހަ</button>
+        <button className='bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}>ކުރިއެ ސަފުހާ</button>
       </div>
     </div >
   )

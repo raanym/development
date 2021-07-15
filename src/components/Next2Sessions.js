@@ -62,10 +62,10 @@ const Next2Sessions = (props) => {
   }
 
   return (
-    <div className='sm:px-52 px-4 font-faseyha bg-customGreen h-auto'>
+    <div className='lg:px-52 sm:px-4 px-4 font-faseyha bg-customGreen h-auto'>
       <div className='p-6 mt-6'>
-        <h2 className='font-waheed text-2xl sm:text-3xl'>ކުރިހާ އޮތް 2 ސެޝަންތެއް</h2>
-        <div className='grid grid-cols-1 gap-y-10 sm:grid-cols-4 sm:gap-y-8 sm:gap-x-10 sm:gap-4 p-2 mt-2'>
+        <h2 className='font-waheed text-2xl sm:text-3xl'>ކުރިހާ ތީ ސެޝަންތެއް</h2>
+        <div className='grid grid-cols-1 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-y-8 sm:gap-4 sm:gap-x-2 md:gap-x-4 lg:gap-x-10 md:gap-4 p-2 mt-2'>
           {filteredSessions.map(session => {
             return <div key={session.name} className='font-bold text-xl'>
               <h3 className='bg-customGreenLight rounded py-1 px-2 mb-2'>{session.name}</h3>
@@ -85,7 +85,7 @@ const Next2Sessions = (props) => {
             </div>
           })}
         </div>
-        <button className='bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}>އިތުރު ސެޝަންތައް</button>
+        <button className='bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}>އިތުރި ސެޝަންތައް</button>
       </div>
     </div >
   )

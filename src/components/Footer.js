@@ -8,7 +8,7 @@ import { ReactComponent as Twitter } from '../img/twitter.svg';
 const Footer = () => {
 
   return (
-    <div className='sm:flex sm:justify-between sm:px-60 px-4 py-4 mt-4 border-t border-gray-100 items-center bg-gray-50 text-sm'>
+    <div className='sm:flex sm:justify-between lg:px-60 sm:px-9 px-4 py-4 mt-4 border-t border-gray-100 items-center bg-gray-50 text-sm'>
       <div className='flex items-center justify-center'>
         <FCC className='h-12 w-auto' />
         <p className='font-faseyha px-2 font-thin text-gray-500'>ފުވައްމުލައް ސިޓީ ކައުންސިލް</p>

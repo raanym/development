@@ -11,10 +11,6 @@ import Footer from './components/Footer'
 import './App.css';
 
 function App() {
-  useEffect(() => {
-    document.title = "Fuvahmulah Plan 2022-2026";
-  }, []);
-
 
   const sessions = [
     { name: 'ވިޔަފާރި', date: new Date('July 12 2021 10:00'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
