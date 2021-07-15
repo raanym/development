@@ -1,6 +1,8 @@
 import { ReactComponent as DateIcon } from '../img/dateIcon.svg';
 import { ReactComponent as Clock } from '../img/clock.svg';
 import { ReactComponent as Zoom } from '../img/zoom.svg';
+import { ReactComponent as FB } from '../img/fb-meet.svg';
+import { ReactComponent as ClubHouse } from '../img/Clubhouse.svg';
 
 const NextSessions = (props) => {
 
@@ -75,10 +77,10 @@ const NextSessions = (props) => {
                 <Clock className='w-auto inline' style={{ height: '2.2rem' }} />
                 <p className='inline px-2'>{`${session.date.getHours()}:${session.date.getSeconds()}0`}</p>
               </div>
-              <div className='mt-1'>
-                <Zoom className='h-8 w-auto inline ml-2' />
-                <a href={session.link} className='text-black hover:text-green-900'>
-                  ޒޫމް ލިންކް</a>
+              <div className='mt-2 border-t border-customGreenLight'>
+                <a href={session.link} className='text-black hover:text-green-900'><Zoom className='h-10 w-auto inline ml-2 mt-2' /></a>
+                <a href={session.link} className='text-black hover:text-green-900'><FB className='h-8 w-auto inline ml-2 mt-2' /></a>
+                <a href={session.link} className='text-black hover:text-green-900'><ClubHouse style={{ 'height': '2.3rem' }} className='h-10 w-auto inline ml-2 mt-2' /></a>
               </div>
             </div>
           })}
