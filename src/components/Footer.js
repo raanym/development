@@ -27,7 +27,7 @@ const Footer = () => {
           <FB className='h-10 w-auto' />
         </div>
         <div className='flex sm:items-center'>
-          <p className='mt-1 sm:mt-0 px-2'><a className='hover:text-teal' href='https://twitter.com/fvmcouncil?lang=en'>fvmcitycouncil/</a></p>
+          <p className='mt-1 sm:mt-0 px-2'><a className='hover:text-teal' href='https://twitter.com/fvmcouncil?lang=en'>fvmcouncil@</a></p>
           <Twitter className='h-8 w-auto' />
         </div>
       </div>
