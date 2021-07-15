@@ -13,16 +13,22 @@ import './App.css';
 function App() {
 
   const sessions = [
-    { name: 'ވިޔަފާރި', date: new Date('July 12 2021 10:00'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
-    { name: 'މަސްވެރިކަން', date: new Date('July 12 2021 20:30'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
-    { name: 'ފަތުރުވެރިކަން', date: new Date('July 13 20 21 10:00'), area: 'ނޫ އިޤްތިޞާދު', link: 'text' },
-    { name: 'ދަނޑޮވެރިކަން', date: new Date('July 13 2021 20:30'), area: 'ނޫ އިޤްތިޞާދު', link: '' },
-    { name: 'ޞިއްހަތޮ', date: new Date('July 14 2021 11:00'), area: 'އޯގާތެރި ސަރުކާރު', link: '' },
-    { name: 'ތަޢުލީމު', date: new Date('July 14 2021 14:00'), area: 'އޯގާތެރި ސަރުކާރު', link: '' },
-    { name: 'ޒުވާނުން', date: new Date('July 15 2021 10:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
-    { name: 'ކުޅިވަރޮ', date: new Date('July 15 2021 14:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
-    { name: 'ޖައްމިއްޔާ ޖަމާއައްތެއް', date: new Date('July 16 2021 10:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
-    { name: 'ދީން', date: new Date('July 16 2021 14:00'), area: 'ފަޙުރުވެރި ޢާއިލާ', link: '' },
+    { name: 'ވިޝަނިން', date: new Date('July 18 2021 20:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ވިޔަފާަރި އަދި އާންމު އިޤްތިސާދު', date: new Date('July 21 2021 20:00'), zoom: '', fb: '', ch: '' },
+    {
+      name: 'ފަތުރުވެރިކަން', date: new Date('July 21 2021 21:45'), zoom: '', fb: '', ch: ''
+    },
+    { name: 'މަސްވެރިކަން', date: new Date('July 22 2021 20:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ދަނޑޮވެރިކަން', date: new Date('July 22 2021 21:45'), zoom: '', fb: '', ch: '' },
+    { name: 'ޞިއްހަތޮ', date: new Date('July 23 2021 20:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ތަޢުލީމު', date: new Date('July 23 2021 21:45'), zoom: '', fb: '', ch: '' },
+    { name: 'ޒުވާނުން / ކުޅިވަރޮ / އެންޖީއޯތެއް', date: new Date('July 24 2021 20:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ދީނާއި މުޖުތަމަޢު', date: new Date('July 24 2021 21:45'), zoom: '', fb: '', ch: '' },
+    { name: 'ތިމާވެށި', date: new Date('July 25 2021 20:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ސްމާޓް ސިޓީ', date: new Date('July 25 2021 21:45'), zoom: '', fb: '', ch: '' },
+    { name: 'ހިންގުންތެރި ކައުންސިލް', date: new Date('July 26 2021 20:00'), zoom: '', fb: '', ch: '' },
+    { name: 'އާބަން ޕްލޭނިން / ދަތުރުފަތުރު / އުމްރާނީ ތަރައްޤީ', date: new Date('July 26 2021 21:45'), zoom: '', fb: '', ch: '' },
+    { name: 'ހައުސިން އެންޑް ލިވަބަލް ސިޓީ', date: new Date('July 27 2021 20:00'), zoom: '', fb: '', ch: '' },
   ]
 
   const UIChangeBack = () => {
