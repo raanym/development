@@ -7,7 +7,7 @@ import { ReactComponent as Idea } from '../img/idea.svg';
 const FormPanelLinks = (props) => {
 
   const formContent = [
-    { title: 'ތޫނޑު', class: 'bg-thundi', link: 'https://forms.gle/FDfzMtjprBPwTYB9A', heading: 'Development of Thoondu', name: 'Thoondu' },
+    { title: 'ތޫނޑު', class: 'bg-thundi', link: 'https://forms.gle/FDfzMtjprBPwTYB9A', beading: 'Development of Thoondu', name: 'Thoondu' },
     { title: 'ބަނދަރޮ ސަރަހައްދު', class: 'bg-harbour', link: 'https://forms.gle/eLQJF7M5yb2HeHf1A' },
     { title: 'ބިޅިފޭށި', class: 'bg-bilhifeyshi', link: 'https://forms.gle/LkcKrUpFBEbrPpDU6' },
     { title: 'ރަސްމީ ބޯޅަދަނޑޮ', class: 'bg-rasmee-dhandu', link: 'https://forms.gle/w13EQMeiz1aryVQh9' },
