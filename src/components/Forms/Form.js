@@ -19,10 +19,11 @@ const Form = (props) => {
 
       <form
         className='mt-4 p-1'
-        name={props.name}
+        name='thoondu'
         method='POST'
       >
-        <input type='hidden' name={props.name} value={props.name} />
+        <input type="hidden" name="form-name" value="thoondu" />
+
 
         <div className='text-left block'>
           <label htmlFor='idea'>Describe your future vision for Thoondu. Tell us how you want it to be developed.
