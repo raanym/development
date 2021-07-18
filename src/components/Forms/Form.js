@@ -31,7 +31,7 @@ const Form = (props) => {
         </label>
         <div className='text-left block mt-4'>
           <label>Share your vision/ideas in writing or as a concept sketch / drawing.
-            <input name='picture' type='file' className='text-left block w-full' />
+            <input name='picture' enctype="multipart/form-data" type='file' className='text-left block w-full' />
           </label>
         </div>
         <div className='text-left block mt-4'>
