@@ -55,7 +55,7 @@ const Next2Sessions = (props) => {
 
                 {(session.ch === '')
                   ? <ClubHouse style={{ 'height': '2.3rem' }} className='h-10 w-auto inline ml-2 mt-2 opacity-50' />
-                  : <a href={session.link}><ClubHouse style={{ 'height': '2.3rem' }} className='h-10 w-auto inline ml-2 mt-2' /></a>}
+                  : <a href={session.ch}><ClubHouse style={{ 'height': '2.3rem' }} className='h-10 w-auto inline ml-2 mt-2' /></a>}
               </div>
             </div>
           })}

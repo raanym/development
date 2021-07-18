@@ -13,7 +13,7 @@ import './App.css';
 function App() {
 
   const sessions = [
-    { name: 'ވިޝަނިން', date: new Date('July 18 2021 20:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ވިޝަނިން', date: new Date('July 18 2021 20:00'), zoom: 'https://us02web.zoom.us/j/89086461297?pwd=NnNvcFdoRXgwaGhvcVdMaHQwYnBndz09', fb: '', ch: 'https://www.clubhouse.com/event/M435XRaa' },
     { name: 'ވިޔަފާަރި އަދި އާންމު އިޤްތިސާދޮ', date: new Date('July 21 2021 20:00'), zoom: '', fb: '', ch: '' },
     {
       name: 'ފަތުރުވެރިކަން', date: new Date('July 21 2021 21:45'), zoom: '', fb: '', ch: ''
@@ -31,7 +31,6 @@ function App() {
     { name: 'ހައުސިން އެންޑް ލިވަބަލް ސިޓީ', date: new Date('July 27 2021 20:00'), zoom: '', fb: '', ch: '' },
   ]
 
-  console.log(sessions[2].date)
 
   const UIChangeBack = () => {
     setUI(currentUI);
