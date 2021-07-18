@@ -25,28 +25,28 @@ const Form = (props) => {
         <input type="hidden" name="form-name" value="thoondu" />
 
 
-        <div className='text-left block'>
-          <label htmlFor='idea'>Describe your future vision for Thoondu. Tell us how you want it to be developed.
-          </label>
+        <label>Describe your future vision for Thoondu. Tell us how you want it to be developed.
           <textarea name='idea' className='text-left block w-full px-1 border boder-gray-20' />
+        </label>
+        <div className='text-left block mt-4'>
+          <label>Share your vision/ideas in writing or as a concept sketch / drawing.
+            <input name='upload' type='file' className='text-left block w-full' />
+          </label>
         </div>
         <div className='text-left block mt-4'>
-          <label htmlFor='upload'>Share your vision/ideas in writing or as a concept sketch / drawing.</label>
-          <input name='upload' type='file' className='text-left block w-full' />
-        </div>
-        <div className='text-left block mt-4'>
-          <label htmlFor='name'>Name</label>
-          <input name='name' type='text' className='text-left block w-full border boder-gray-20 py-2' />
+          <label>Name
+            <input name='name' type='text' className='text-left block w-full border boder-gray-20 py-2' />
+          </label>
         </div>
         <div className='text-left block mt-4'>
           <label htmlFor='email'>Email
+            <input name='email' type='email' className='text-left block w-full border boder-gray-20 py-2' />
           </label>
-          <input name='email' type='email' className='text-left block w-full border boder-gray-20 py-2' />
         </div>
         <div className='text-left block mt-4'>
           <label htmlFor='contact'>Contact
+            <input name='contact' type='number' className='text-left block w-full border boder-gray-20 py-2' />
           </label>
-          <input name='contact' type='number' className='text-left block w-full border boder-gray-20 py-2' />
         </div>
         <button type='submit' className='bg-gray-200 mt-2 rounded px-20 py-2 hover:bg-gray-300'>Submit</button>
       </form>
