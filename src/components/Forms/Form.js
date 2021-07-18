@@ -26,7 +26,7 @@ const Form = (props) => {
 
 
         <label>Describe your future vision for Thoondu. Tell us how you want it to be developed.
-          <textarea name='idea' className='text-left block w-full px-1 border boder-gray-20' />
+          <textarea name='idea' className='text-left block w-full px-1 border boder-gray-20' ></textarea>
         </label>
         <div className='text-left block mt-4'>
           <label>Share your vision/ideas in writing or as a concept sketch / drawing.
