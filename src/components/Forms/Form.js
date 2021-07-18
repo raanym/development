@@ -21,6 +21,7 @@ const Form = (props) => {
         className='mt-4 p-1'
         name='thoondu'
         method='POST'
+        data-netlify='true'
       >
         <input type="hidden" name="form-name" value="thoondu" />
 
