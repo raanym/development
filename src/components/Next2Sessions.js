@@ -3,7 +3,7 @@ import { ReactComponent as Clock } from '../img/clock.svg';
 import { ReactComponent as Zoom } from '../img/zoom.svg';
 import { ReactComponent as FB } from '../img/fb-meet.svg';
 import { ReactComponent as ClubHouse } from '../img/Clubhouse.svg';
-import { ReactComponent as Plus } from '../img/plus.svg';
+import { ReactComponent as Plus } from '../img/down-arrow.svg';
 
 
 const Next2Sessions = (props) => {
@@ -29,7 +29,7 @@ const Next2Sessions = (props) => {
   }
 
   return (
-    <div className='lg:pr-52 sm:px-4 px-4 font-faseyha bg-customGreen h-auto'>
+    <div className='lg:pr-40 sm:px-4 px-4 font-faseyha bg-customGreen h-auto'>
       <div className='p-6 mt-6'>
         <h2 className='font-waheed text-2xl sm:text-3xl'>ކުރިހާ ތީ ސެޝަންތެއް</h2>
         <div className='grid grid-cols-1 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-y-8 sm:gap-4 sm:gap-x-2 md:gap-x-4 lg:gap-x-10 md:gap-4 p-2 mt-2'>

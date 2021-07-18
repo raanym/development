@@ -3,7 +3,7 @@ import { ReactComponent as Clock } from '../img/clock.svg';
 import { ReactComponent as Zoom } from '../img/zoom.svg';
 import { ReactComponent as FB } from '../img/fb-meet.svg';
 import { ReactComponent as ClubHouse } from '../img/Clubhouse.svg';
-import { ReactComponent as Minus } from '../img/minus.svg';
+import { ReactComponent as Minus } from '../img/down-arrow.svg';
 
 const NextSessions = (props) => {
 
@@ -50,7 +50,7 @@ const NextSessions = (props) => {
             </div>
           })}
         </div>
-        <button className='flex items-center bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}><Minus className='ml-3 h-8 w-8' /> މަދުން ސެޝަންތެއް</button>
+        <button className='flex items-center bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}><Minus className='mx-auto h-8 w-8 transform rotate-180 ' /></button>
       </div>
     </div >
   )
