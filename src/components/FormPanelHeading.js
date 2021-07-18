@@ -1,6 +1,6 @@
 import { ReactComponent as Arrow } from '../img/arrow.svg';
 
-const FormHeader = () => {
+const FormPanelHeader = () => {
 
 
   return (
@@ -15,4 +15,4 @@ const FormHeader = () => {
   );
 }
 
-export default FormHeader;
+export default FormPanelHeader;

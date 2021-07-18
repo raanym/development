@@ -6,8 +6,9 @@ import ShowCase from './components/ShowCase';
 import NextSessions from './components/NextSessions';
 import MassalaSurvey from './components/MassalaSurvey';
 import Next2Sessions from './components/Next2Sessions'
-import Form from './components/Form';
+import FormPanel from './components/FormPanel';
 import Footer from './components/Footer'
+import Form from './components/Forms/Form'
 import './App.css';
 
 function App() {
@@ -42,7 +43,7 @@ function App() {
       <ShowCase />
       <NextSessions click={UIChangeBack} sessions={sessions} />
       <MassalaSurvey />
-      <Form />
+      <FormPanel />
       <Footer />
     </div>)
   }
@@ -52,7 +53,7 @@ function App() {
     <ShowCase />
     <Next2Sessions click={UIChange} sessions={sessions} />
     <MassalaSurvey />
-    <Form />
+    <FormPanel />
     <Footer />
   </div>;
 
