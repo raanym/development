@@ -4,13 +4,14 @@ const Form = (props) => {
   return (
     <div className='sm:px-40' style={{ direction: 'ltr' }}>
       <h1 className='text-center sm:text-2xl text-xl bg-teal text-white font-bold py-3 rounded'>{props.heading}</h1>
-      <p className='text-left p-4 leading-relaxed font-noto'>Fuvahmulah City Council is working on a new City Development Plan. Get involved in the planning process. We want to hear your voice.
-
+      <p className='text-left p-4 leading-relaxed font-noto'>Fuvahmulah City Council is working on a new City Development Plan. Get involved in the planning process. We want to hear your voice.</p>
+      <p className='text-left p-4 leading-relaxed font-noto'>
         We want you to provide your ideas and views on how you want Fuvahmulah City to be developed. The concepts and ideas you contribute will provide valuable insights into how the future development of Fuvahmulah be shaped.
         Share with us how you want to see {props.name} area to be developed. You can submit in writing or concept drawing or sketches.
-
+      </p>
+      <p className='text-left p-4 leading-relaxed font-noto'>
         Thank you for your contribution to improve the quality of life in Fuvahmulah City.
-        The name and photo associated with your Google Account will be recorded when you upload files and submit this form</p>
+        The data you enter and files uploaded will be recorded when you submit this form</p>
 
       <div className=' flex flex-col'>
         <h1 className='text-xl text-left font-bold'>{props.name}</h1>
@@ -27,8 +28,8 @@ const Form = (props) => {
         <input type="hidden" name="form-name" value="thoondu" />
 
 
-        <label>Describe your future vision for Thoondu. Tell us how you want it to be developed.
-          <textarea name='message' className='text-left block w-full px-1 border boder-gray-20' ></textarea>
+        <label>Describe your future vision for {props.name}. Tell us how you want it to be developed.
+          <textarea name={`message-${props.name}`} className='text-left block w-full px-1 border boder-gray-20' ></textarea>
         </label>
         <div className='text-left block mt-4'>
           <label>Share your vision/ideas in writing or as a concept sketch / drawing.
