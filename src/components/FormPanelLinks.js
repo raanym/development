@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ReactModal from "react-modal";
 
 import Form from './Forms/Form';
+import FormPanelItem from './FormPanelItem';
 import { ReactComponent as Idea } from '../img/idea.svg';
 
 const FormPanelLinks = (props) => {
@@ -102,81 +103,30 @@ const FormPanelLinks = (props) => {
       heading: 'Development of Kandhovali Dhado',
       name: 'Kandhovali Dhado',
       imgTop: 'https://lh3.googleusercontent.com/0OlKPCL0FXSetIPzve9k7NAWHXCFd_PAcBhLJpobvk1WrCFA88vme8Tt1Bb7_-_q3saKjGgcoESFqKqE2Phd6xIfAdtHhML1VqkBjpMJN3ZmMZZxQfvFmoyLlC4RfPtcmw=w714'
-    },
-    {
-      title: 'އެހެން ސަރަހައްދަކިސް ތަރައްގީ ކެރަންނަ ޚިޔާލާއް އޮއްފަހެނާ ފެނޮވާދިނުން އެދެން', link: 'https://forms.gle/8XL8wUEieRpH6wJP9'
     }
   ]
-
-  const [modal, setModal] = useState(false);
-
-  const modalToggle = () => {
-    if (modal) {
-      setModal(false);
-    } else {
-      setModal(true);
-    }
-  }
-
-  const customStyles = {
-    content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
-      height: '500px', // <-- This sets the height
-      overlfow: 'hidden' // <-- This tells the modal to scrol
-    }
-  };
-
 
   return (
     <div className='lg:px-52 sm:px-6 px-2 sm:grid sm:grid-cols-3 block flex flex-col font-waheed leading-relaxed'>
       {formContent.map((content, i) => {
-        if (content.beading) {
-
-          return <div className=''>
-            <ReactModal isOpen={modal}
-              onAfterOpen={() => {
-                document.body.style.top = `-${window.scrollY}px`
-                document.body.style.position = 'fixed'
-              }}
-              onAfterClose={() => {
-                const scrollY = document.body.style.top
-                document.body.style.position = ''
-                document.body.style.top = ''
-                window.scrollTo(0, parseInt(scrollY || '0') * -1)
-              }}
-              onRequestClose={modalToggle}>
-              <Form heading={content.heading} name={content.name} />
-              <button className='bg-gray-200 px-10 py-2 rounded hover:bg-gray-300' onClick={modalToggle}>Close</button>
-            </ReactModal>
-            <a
-              onClick={modalToggle}
-              key={content.title}
-              className={`${content.class} lg:text-2xl sm:text-lg text-2xl bg-cover bg-center hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 flex justify-center items-center py-8 px-4 m-1 text-white h-40 md:h-60 transition-all`} >
-              <span className='bg-gray-200 rounded text-black sm:py-2 lg:py-2 py-2 px-10'>{content.title}</span>
-            </a></div>
-        }
-
-        if ((formContent.length - 1) === i) {
-          return <a href={content.link}
-            target='_blank'
+        if ((formContent.length - 2) === i) {
+          return <div
             key={content.title}
-            propData={content}
-            className={`${content.class} text-white sm:text-lg text-2xl lg:text-2xl flex justify-center items-center py-8 px-4 bg-customBlue hover:bg-blue-700 m-1 col-span-2`}>
-            <Idea className='inline h-20 ml-4' />
-            {content.title}
-          </a>
-        } else if ((formContent.length - 3) === i) {
-          return <a href={content.link} target='_blank' key={content.title} className={`${content.class} text-white sm:text-lg text-2xl lg:text-2xl h-40 col-span-2 bg-cover bg-center hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 text-2xl flex justify-center items-center py-8 px-4 bg-gray-300 m-1 hover:bg-gray-400 transition-all`}><span className='bg-gray-100 rounded text-black py-2 px-10'>{content.title}</span></a>
-        } else if ((formContent.length - 2) === i) {
-          return <a href={content.link} target='_blank' key={content.title} className={`${content.class} text-black sm:text-lg text-2xl lg:text-2xl h-40 sm:h-auto row-span-2 bg-cover bg-center hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 flex justify-center items-center py-8 px-4 m-1 hover:bg-gray-400 transition-all`}><span className='bg-gray-100 rounded text-black py-2 px-10'>{content.title}</span></a>
+            className='col-span-2'>
+            <FormPanelItem
+              content={content}
+
+            />
+          </div>
         }
         else {
-          return <a href={content.link} target='_blank' key={content.title} className={`${content.class} lg:text-2xl sm:text-lg text-2xl bg-cover bg-center hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 flex justify-center items-center py-8 px-4 m-1 text-white h-40 md:h-60 transition-all`} > <span className='bg-gray-200 rounded text-black sm:py-2 lg:py-2 py-2 px-10'>{content.title}</span></a>
+          return <div
+            key={content.title}
+          >
+            <FormPanelItem
+              content={content}
+            />
+          </div>
         }
 
       })}

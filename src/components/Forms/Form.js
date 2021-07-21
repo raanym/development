@@ -1,6 +1,6 @@
 const Form = (props) => {
 
-  console.log(props)
+
   return (
     <div className='sm:px-40' style={{ direction: 'ltr' }}>
       <h1 className='text-center sm:text-2xl text-xl bg-teal text-white font-bold py-3 rounded'>{props.heading}</h1>
@@ -15,17 +15,17 @@ const Form = (props) => {
 
       <div className=' flex flex-col'>
         <h1 className='text-xl text-left font-bold'>{props.name}</h1>
-        <img className='sm:w-4/5' src='https://lh3.googleusercontent.com/n3L2pKlw_F11_E_IEcG6Gv_anU1tNfHvh5d43uE-rA_20GCVevn9HKJPa8NH7F9YlnTvfdMzQ1xMogdhBCHykXcM_BgnC6Rdbd5lmHpDEM0O9SuuTzqoW5toI1rNyhs8zw=w740' />
+        <img className='sm:w-4/5' src={(props.imgTop ? props.imgTop : null)} />
       </div>
 
       <form
         className='mt-4 p-1'
-        name='thoondu'
+        name='myvoice-form'
         method='POST'
         data-netlify='true'
-        enctype="multipart/form-data"
+        encType="multipart/form-data"
       >
-        <input type="hidden" name="form-name" value="thoondu" />
+        <input type="hidden" name="form-name" value="myvoice-form" />
 
 
         <label>Describe your future vision for {props.name}. Tell us how you want it to be developed.
@@ -55,7 +55,7 @@ const Form = (props) => {
       </form>
       <div className='mt-4 pl-1 mb-4'>
         <h2 className='text-2xl mb-1'>Thank you!</h2>
-        <img className='sm:w-4/5' src='https://lh3.googleusercontent.com/c1C-_wHmrZ3_G3ld-nNLq3jmBeBsHL04Ns5HWPJ7Uyn_Q9VRK7M1nulk3R3Ol1JHzbnLR_eXVs7OF26u4bKt1QARMSdzdBxDsiQ4oFseA6WNvBSbCO0thY3IkwsTF1dbQg=w2000' />
+        <img className='sm:w-4/5' src={(props.imgBottom) ? props.imgBottom : null} />
       </div>
     </div >
   );
