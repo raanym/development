@@ -47,8 +47,8 @@ const Form = (props) => {
           </label>
         </div>
         <div className='text-left block mt-4'>
-          <label htmlFor='contact'>Contact
-            <input name='contact' type='number' className='text-left block w-full border boder-gray-20 py-2' />
+          <label htmlFor='contact'>Phone Number
+            <input name='contact' type='text' className='text-left block w-full border boder-gray-20 py-2' />
           </label>
         </div>
         <button type='submit' className='bg-gray-200 mt-2 rounded px-20 py-2 hover:bg-gray-300'>Submit</button>
