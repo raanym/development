@@ -20,12 +20,12 @@ const Form = (props) => {
 
       <form
         className='mt-4 p-1'
-        name='myvoice-form'
+        name={props.form}
         method='POST'
         data-netlify='true'
         encType="multipart/form-data"
       >
-        <input type="hidden" name="form-name" value="myvoice-form" />
+        <input type="hidden" name="form-name" value={props.form} />
 
 
         <label>Describe your future vision for {props.name}. Tell us how you want it to be developed.

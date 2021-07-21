@@ -39,7 +39,10 @@ const FormPanelItem = (props) => {
           heading={props.content.heading}
           name={props.content.name}
           imgTop={props.content.imgTop}
-          imgBottom={props.content.imgBottom} />
+          imgBottom={props.content.imgBottom}
+          form={props.content.form}
+        />
+
         <button
           className='bg-gray-200 px-10 py-2 rounded hover:bg-gray-300'
           onClick={() => setModal(false)}>Close</button>
