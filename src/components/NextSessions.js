@@ -42,7 +42,7 @@ const NextSessions = (props) => {
 
                 {(session.fb === '')
                   ? <FB className='h-8 w-auto inline ml-2 mt-2 opacity-50' />
-                  : <a href={session.fb}><Zoom className='h-10 w-auto inline ml-2 mt-2' /></a>}
+                  : <a href={session.fb}><FB className='h-10 w-auto inline ml-2 mt-2' /></a>}
               </div>
             </div>
           })}
