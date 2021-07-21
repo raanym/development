@@ -35,9 +35,6 @@ const NextSessions = (props) => {
                 <p className='inline px-2'>{`${session.date.getHours()}:${(session.date.getMinutes() === 0) ? '00' : session.date.getMinutes()}`}</p>
               </div>
               <div className='mt-2 border-t border-customGreenLight'>
-                {(session.zoom === '')
-                  ? <Zoom className='h-10 w-auto inline ml-2 mt-2  opacity-50' />
-                  : <a href={session.zoom}><Zoom className='h-10 w-auto inline ml-2 mt-2' /></a>}
 
                 {(session.ch === '')
                   ? <ClubHouse style={{ 'height': '2.3rem' }} className='h-10 w-auto inline ml-2 mt-2 opacity-50' />

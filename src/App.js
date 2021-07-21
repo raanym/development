@@ -14,10 +14,10 @@ import './App.css';
 function App() {
 
   const sessions = [
-    { name: 'ވިޝަނިން', date: new Date('July 18 2021 20:00'), zoom: 'https://us02web.zoom.us/j/89086461297?pwd=NnNvcFdoRXgwaGhvcVdMaHQwYnBndz09', fb: '', ch: 'https://www.clubhouse.com/event/M435XRaa' },
-    { name: 'ވިޔަފާަރި އަދި އާންމު އިޤްތިސާދޮ', date: new Date('July 21 2021 20:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ވިޝަނިން', date: new Date('July 18 2021 20:00'), zoom: 'https://us02web.zoom.us/j/89086461297?pwd=NnNvcFdoRXgwaGhvcVdMaHQwYnBndz09', fb: 'https://www.facebook.com/fvmcitycouncil/videos/2592004401094421/', ch: 'https://www.clubhouse.com/event/M435XRaa' },
+    { name: 'ވިޔަފާަރި އަދި އާންމު އިޤްތިސާދޮ', date: new Date('July 21 2021 20:00'), fb: '', ch: 'https://www.clubhouse.com/event/Prn09WAW' },
     {
-      name: 'ފަތުރުވެރިކަން', date: new Date('July 21 2021 21:45'), zoom: '', fb: '', ch: ''
+      name: 'ފަތުރުވެރިކަން', date: new Date('July 21 2021 21:45'), fb: '', ch: 'https://www.clubhouse.com/event/MzkAqEdb'
     },
     { name: 'މަސްވެރިކަން', date: new Date('July 22 2021 20:00'), zoom: '', fb: '', ch: '' },
     { name: 'ދަނޑޮވެރިކަން', date: new Date('July 22 2021 21:45:00'), zoom: '', fb: '', ch: '' },
