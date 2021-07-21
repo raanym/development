@@ -29,7 +29,7 @@ const Form = (props) => {
 
 
         <label>Describe your future vision for {props.name}. Tell us how you want it to be developed.
-          <textarea name={`message-${props.name}`} className='text-left block w-full px-1 border boder-gray-20' ></textarea>
+          <textarea name='message' className='text-left block w-full px-1 border boder-gray-20' ></textarea>
         </label>
         <div className='text-left block mt-4'>
           <label>Share your vision/ideas in writing or as a concept sketch / drawing.
