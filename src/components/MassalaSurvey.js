@@ -2,9 +2,7 @@ import { ReactComponent as Survey } from '../img/survey.svg';
 import { ReactComponent as Complaint } from '../img/complaint.svg';
 
 const MassalaSurvey = () => {
-  // //   {
-  // title: 'އެހެން ސަރަހައްދަކިސް ތަރައްގީ ކެރަންނަ ޚިޔާލާއް އޮއްފަހެނާ ފެނޮވާދިނުން އެދެން', link: 'https://forms.gle/8XL8wUEieRpH6wJP9'
-  // }
+
 
   return (
     <div className='sm:px-6 lg:px-52 px-4 font-waheed text-3xl mt-6'>

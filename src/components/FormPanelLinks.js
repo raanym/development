@@ -3,7 +3,7 @@ import ReactModal from "react-modal";
 
 import Form from './Forms/Form';
 import FormPanelItem from './FormPanelItem';
-import { ReactComponent as Idea } from '../img/idea.svg';
+
 
 const FormPanelLinks = (props) => {
 
@@ -114,13 +114,21 @@ const FormPanelLinks = (props) => {
       name: 'Kandhovali Dhado',
       form: 'kandhovali',
       imgTop: 'https://lh3.googleusercontent.com/0OlKPCL0FXSetIPzve9k7NAWHXCFd_PAcBhLJpobvk1WrCFA88vme8Tt1Bb7_-_q3saKjGgcoESFqKqE2Phd6xIfAdtHhML1VqkBjpMJN3ZmMZZxQfvFmoyLlC4RfPtcmw=w714'
+    },
+    {
+      title: 'އެހެން ސަރަހައްދަކިސް ތަރައްގީ ކެރަންނަ ޚިޔާލާއް އޮއްފަހެނާ ފެނޮވާދިނުން އެދެން',
+      link: 'https://forms.gle/8XL8wUEieRpH6wJP9',
+      class: 'bg-customBlue',
+      heading: 'Development Ideas for Specific Areas',
+      name: 'place/area',
+      form: 'other'
     }
   ]
 
   return (
     <div className='lg:px-52 sm:px-6 px-2 sm:grid sm:grid-cols-3 block flex flex-col font-waheed leading-relaxed'>
       {formContent.map((content, i) => {
-        if ((formContent.length - 2) === i) {
+        if ((formContent.length - 1) === i) {
           return <div
             key={content.title}
             className='col-span-2'>
@@ -129,8 +137,24 @@ const FormPanelLinks = (props) => {
 
             />
           </div>
-        }
-        else {
+        } else if ((formContent.length - 2) === i) {
+          return <div
+            key={content.title}
+            className='row-span-2'>
+            <FormPanelItem
+              content={content}
+            />
+          </div>
+        } else if ((formContent.length - 3) === i) {
+          return <div
+            key={content.title}
+            className='col-span-2'>
+            <FormPanelItem
+              content={content}
+
+            />
+          </div>
+        } else {
           return <div
             key={content.title}
           >

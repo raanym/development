@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ReactModal from "react-modal";
 
+import { ReactComponent as Idea } from '../img/idea.svg';
 import Form from './Forms/Form';
 
 
@@ -11,13 +12,19 @@ const FormPanelItem = (props) => {
   const [modal, setModal] = useState(false);
 
   return (
-    <div>
+    <div
+      className={`${(props.content.form === 'kandhovali') ? 'md:h-full h-40' : 'h-40 md:h-60'}`}
+    >
       <a
-        className={`${props.content.class} lg:text-2xl sm:text-lg text-2xl bg-cover bg-center hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 flex justify-center items-center py-8 px-4 m-1 text-white h-40 md:h-60 transition-all`}
+        className={`${props.content.class} lg:text-2xl sm:text-lg text-2xl bg-cover bg-center hover:text-gray-100 sm:opacity-80 sm:hover:opacity-100 flex justify-center items-center py-8 m-1 text-white ${(props.content.form === 'kandhovali') ? 'md:h-full h-40' : 'h-40 md:h-60'}  transition-all`}
         onClick={() => setModal(true)}
       >
-        <span className='bg-gray-200 rounded text-black sm:py-2 lg:py-2 py-2 px-10'>
+        <span className={`${props.content.form === 'other' ? 'text-white' : 'bg-gray-200'} rounded text-black sm:py-2 lg:py-2 py-2 px-10`}>
+          {props.content.form === 'other' &&
+            <Idea className='md:h-20 h-12 ml-4 inline ' />
+          }
           {props.content.title}
+
         </span>
       </a>
 
