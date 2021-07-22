@@ -18,12 +18,20 @@ const NextSessions = (props) => {
     props.click();
   }
 
+  const today = new Date
+
+  const filteredSessions = props.sessions.filter(session => {
+    if (session.date.getDate() >= today.getDate()) {
+      return session;
+    }
+  })
+
   return (
     <div className='lg:px-40 sm:px-4 px-4 font-faseyha bg-customGreen h-auto'>
       <div className='p-6 mt-6'>
-        <h2 className='font-waheed text-2xl sm:text-3xl'>ކުރިހާތީ އަދި ނިމީވޭފޭވޭ ސެޝަންތެއް</h2>
+        <h2 className='font-waheed text-2xl sm:text-3xl'>ކުރިހާ ތީ ސެޝަންތެއް</h2>
         <div className='grid grid-cols-1 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-y-8 sm:gap-4 sm:gap-x-2 md:gap-x-4 lg:gap-x-10 md:gap-4 p-2 mt-2'>
-          {props.sessions.map(session => {
+          {filteredSessions.map(session => {
             return <div key={session.name} className='font-bold text-lg'>
               <h3 className='bg-customGreenLight rounded py-2 px-2 mb-2'>{session.name}</h3>
               <div className=''>
@@ -47,7 +55,7 @@ const NextSessions = (props) => {
             </div>
           })}
         </div>
-        <button className='flex items-center bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}><Minus className='mx-auto h-8 w-8 transform rotate-180 ' /></button>
+        <button className='flex items-center bg-customGreenLight hover:bg-green-500 px-4 py-2 rounded' onClick={buttonHandler}><Minus className='mx-auto h-8 w-6 transform rotate-180 ' /></button>
       </div>
     </div >
   )

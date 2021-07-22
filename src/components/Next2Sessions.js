@@ -57,7 +57,7 @@ const Next2Sessions = (props) => {
             </div>
           })}
         </div>
-        <button className='flex items-center bg-customGreenLight hover:bg-green-500 px-5 py-2 rounded' onClick={buttonHandler}><Plus className='ml-3 h-8 w-8' />އިތިރި ސެޝަންތެއް</button>
+        <button className='flex items-center bg-customGreenLight font-bold hover:bg-green-500 px-2 py-2 rounded' onClick={buttonHandler}><Plus className='ml-3 h-8 w-6' />އިތިރި ސެޝަންތެއް</button>
       </div>
     </div >
   )

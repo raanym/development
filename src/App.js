@@ -19,17 +19,18 @@ function App() {
     {
       name: 'ފަތުރުވެރިކަން', date: new Date('July 21 2021 21:45'), fb: '', ch: 'https://www.clubhouse.com/event/MzkAqEdb'
     },
-    { name: 'މަސްވެރިކަން', date: new Date('July 22 2021 20:00'), zoom: '', fb: '', ch: '' },
-    { name: 'ދަނޑޮވެރިކަން', date: new Date('July 22 2021 21:45:00'), zoom: '', fb: '', ch: '' },
-    { name: 'ޞިއްހަތޮ', date: new Date('July 23 2021 20:00'), zoom: '', fb: '', ch: '' },
-    { name: 'ތައޮލީމުއާ ހުނަރޮ', date: new Date('July 23 2021 21:45'), zoom: '', fb: '', ch: '' },
-    { name: 'ޒުވާނުން / ކުޅިވަރޮ / އެންޖީއޯތެއް', date: new Date('July 24 2021 20:00'), zoom: '', fb: '', ch: '' },
-    { name: 'ދީން މުޖުތަމަޢޮ', date: new Date('July 24 2021 21:45'), zoom: '', fb: '', ch: '' },
-    { name: 'ތިމާވެށި', date: new Date('July 25 2021 20:00'), zoom: '', fb: '', ch: '' },
-    { name: 'ސްމާޓް ސިޓީ', date: new Date('July 25 2021 21:45'), zoom: '', fb: '', ch: '' },
-    { name: 'ހިންގުންތެރި ކައުންސިލް', date: new Date('July 26 2021 20:00'), zoom: '', fb: '', ch: '' },
-    { name: 'އާބަން ޕްލޭނިން / ދަތެރެފަތެރެ / އުމްރާނީ ތަރައްޤީ', date: new Date('July 26 2021 21:45'), zoom: '', fb: '', ch: '' },
-    { name: 'ހައުސިން އެންޑް ލިވަބަލް ސިޓީ', date: new Date('July 27 2021 20:00'), zoom: '', fb: '', ch: '' },
+    { name: 'މަސްވެރިކަން', date: new Date('July 22 2021 20:30'), zoom: '', fb: '', ch: '' },
+    { name: 'ދަނޑޮވެރިކަން', date: new Date('July 22 2021 22:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ޞިއްހަތޮ', date: new Date('July 23 2021 20:30'), zoom: '', fb: '', ch: '' },
+    { name: 'ތައޮލީމުއާ ހުނަރޮ', date: new Date('July 23 2021 22:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ޒުވާނުން / ކުޅިވަރޮ / އެންޖީއޯތެއް', date: new Date('July 24 2021 20:30'), zoom: '', fb: '', ch: '' },
+    { name: 'ދީން މުޖުތަމަޢޮ', date: new Date('July 24 2021 22:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ތިމާވެށި', date: new Date('July 25 2021 20:30'), zoom: '', fb: '', ch: '' },
+    { name: 'ސްމާޓް ސިޓީ', date: new Date('July 25 2021 22:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ހިންގުންތެރި ކައުންސިލް', date: new Date('July 26 2021 20:30'), zoom: '', fb: '', ch: '' },
+    { name: 'އާބަން ޕްލޭނިން / ދަތެރެފަތެރެ / އުމްރާނީ ތަރައްޤީ', date: new Date('July 26 2021 22:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ހައުސިން އެންޑް ލިވަބަލް ސިޓީ', date: new Date('July 27 2021 20:30'), zoom: '', fb: '', ch: '' },
+    { name: 'ސަގާފަތާއި ތަރިކަ', date: new Date('July 27 2021 22:00'), zoom: '', fb: '', ch: '' }
   ]
 
 
