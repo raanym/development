@@ -24,7 +24,7 @@ function App() {
     { name: 'ޞިއްހަތޮ', date: new Date('July 23 2021 20:30'), zoom: '', fb: '', ch: '' },
     { name: 'ތައޮލީމުއާ ހުނަރޮ', date: new Date('July 23 2021 22:00'), zoom: '', fb: '', ch: '' },
     { name: 'ޒުވާނުން / ކުޅިވަރޮ / އެންޖީއޯތެއް', date: new Date('July 24 2021 20:30'), zoom: '', fb: '', ch: '' },
-    { name: 'ދީން މުޖުތަމަޢޮ', date: new Date('July 24 2021 22:00'), zoom: '', fb: '', ch: '' },
+    { name: 'ދީން / މުޖުތަމަޢޮ', date: new Date('July 24 2021 22:00'), zoom: '', fb: '', ch: '' },
     { name: 'ތިމާވެށި', date: new Date('July 25 2021 20:30'), zoom: '', fb: '', ch: '' },
     { name: 'ސްމާޓް ސިޓީ', date: new Date('July 25 2021 22:00'), zoom: '', fb: '', ch: '' },
     { name: 'ހިންގުންތެރި ކައުންސިލް', date: new Date('July 26 2021 20:30'), zoom: '', fb: '', ch: '' },
