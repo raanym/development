@@ -67,7 +67,11 @@ function App() {
 
   return (
     <div>
-      {UI}
+      <Header />
+      <ShowCase />
+      <MassalaSurvey />
+      <FormPanel />
+      <Footer />
     </div>
   );
 }
