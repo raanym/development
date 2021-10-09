@@ -1,8 +1,10 @@
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { Link, Route, Switch } from "react-router-dom";
 
 import Header from './components/Header';
 import ShowCase from './components/ShowCase';
+import MainLink from "./components/UI/MainLink";
 import NextSessions from './components/NextSessions';
 import MassalaSurvey from './components/MassalaSurvey';
 import Next2Sessions from './components/Next2Sessions'
@@ -10,8 +12,11 @@ import FormPanel from './components/FormPanel';
 import Footer from './components/Footer'
 import Form from './components/Forms/Form'
 import './App.css';
+import FormPage from "./pages/FormPage";
+import GavaaidhuMain from "./components/Gavaaidhu/GavaaidhuMain";
+import MainA from "./components/UI/MainA";
 
-function App() {
+function App(props) {
 
   const sessions = [
     { name: 'ވިޝަނިން', date: new Date('July 18 2021 20:00'), zoom: 'https://us02web.zoom.us/j/89086461297?pwd=NnNvcFdoRXgwaGhvcVdMaHQwYnBndz09', fb: 'https://www.facebook.com/fvmcitycouncil/videos/2592004401094421/', ch: 'https://www.clubhouse.com/event/M435XRaa' },
@@ -33,46 +38,46 @@ function App() {
     { name: 'ސަގާފަތާއި ތަރިކަ', date: new Date('July 27 2021 22:00'), zoom: '', fb: '', ch: '' }
   ]
 
+  // Code for planning sessions
+  // const UIChangeBack = () => {
+  //   setUI(currentUI);
+  // }
 
-  const UIChangeBack = () => {
-    setUI(currentUI);
-  }
+  // const UIChange = () => {
+  //   setUI(<div>
+  //     <Header />
+  //     <ShowCase />
+  //     <NextSessions click={UIChangeBack} sessions={sessions} />
+  //     <MassalaSurvey />
+  //     <FormPanel />
+  //     <Footer />
+  //   </div>)
+  // }
 
-  const UIChange = () => {
-    setUI(<div>
-      <Header />
-      <ShowCase />
-      <NextSessions click={UIChangeBack} sessions={sessions} />
-      <MassalaSurvey />
-      <FormPanel />
-      <Footer />
-    </div>)
-  }
-
-  const currentUI = <div>
+  const currentUI = <React.Fragment>
     <Header />
     <ShowCase />
-    <Next2Sessions click={UIChange} sessions={sessions} />
-    <MassalaSurvey />
-    <FormPanel />
+    {/* <Next2Sessions click={UIChange} sessions={sessions} /> */}
+    <GavaaidhuMain />
+    <div className='grid grid-cols-2 gap-2 sm:px-6 lg:px-52'>
+      <MainA className='bg-yellow-400 hover:bg-yellow-500' href='https://google.com'>ތަރައްޤީއާ ކުރިއެރުމަހަ އާންމުކޮހޮ ހުށަހަޅާ ޚިޔާލަ އަދި ލަފާ</MainA>
+      <MainLink className='bg-blue-300 hover:bg-blue-500' to='/area-development'>އިކި އިކި ސަރަހައްދުތެއް ތަރައްޤީކެރުމުގެ ޚިޔާލަ އަދި ކޮންސެޕްޓް</MainLink>
+    </div>
     <Footer />
-  </div>;
+  </React.Fragment >;
 
   const [UI, setUI] = useState(currentUI);
-
-
-
-
-
+  console.log(window.location.pathname)
 
   return (
-    <div>
-      <Header />
-      <ShowCase />
-      <MassalaSurvey />
-      <FormPanel />
-      <Footer />
-    </div>
+    <React.Fragment>
+      <Switch>
+        <Route path='/' exact>
+          {UI}
+        </Route>
+        <Route path='/area-development' component={FormPage} />
+      </Switch>
+    </React.Fragment>
   );
 }
 

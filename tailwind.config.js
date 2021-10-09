@@ -33,6 +33,7 @@ module.exports = {
         'stadium': "url('img/stadium.jpg')",
         'kandhoval': "url('img/kandhoval.jpg')",
         'fvm': "url('img/fvm.jpg')",
+        'feedback': 'url(img/feedback.png)'
       },
     },
   },
