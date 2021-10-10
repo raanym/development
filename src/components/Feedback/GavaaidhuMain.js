@@ -5,17 +5,17 @@ const data = [
   {
     name: 'ބިމާއި ބެހޭ ޤަވާއިދު',
     download: 'https://google.com',
-    form: 'https://microsoft.com'
+    form: 'https://forms.office.com/r/4y8CQHgeYi'
   },
   {
     name: 'ބަނދަރު ޤަވާއިދު',
     download: 'https://google.com',
-    form: 'https://microsoft.com'
+    form: 'https://forms.office.com/r/4y8CQHgeYi'
   },
   {
     name: 'ވެލި ނެގުމާއިބެހޭ ޤަވާއިދު',
     download: 'https://google.com',
-    form: 'https://microsoft.com'
+    form: 'https://forms.office.com/r/4y8CQHgeYi'
   }
 ]
 
