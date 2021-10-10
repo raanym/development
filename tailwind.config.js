@@ -19,6 +19,7 @@ module.exports = {
       fontFamily: {
         waheed: ['MV_Waheed'],
         faseyha: ['MV_Faseyha'],
+        magRound: ['MV_MAG_Round_Bold']
       },
       backgroundImage: {
         'thundi': "url('img/thundi.jpg')",
@@ -33,7 +34,7 @@ module.exports = {
         'stadium': "url('img/stadium.jpg')",
         'kandhoval': "url('img/kandhoval.jpg')",
         'fvm': "url('img/fvm.jpg')",
-        'feedback': 'url(img/feedback.png)'
+        'feedback': 'url(img/feedback.svg)'
       },
     },
   },
