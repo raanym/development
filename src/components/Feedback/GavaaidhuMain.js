@@ -5,22 +5,22 @@ const data = [
   {
     name: 'ބިމާއި ބެހޭ ޤަވާއިދު',
     download: 'https://google.com',
-    form: 'https://forms.office.com/r/4y8CQHgeYi'
+    form: '/form'
   },
   {
     name: 'ބަނދަރު ޤަވާއިދު',
     download: 'https://google.com',
-    form: 'https://forms.office.com/r/4y8CQHgeYi'
+    form: '/form'
   },
   {
     name: 'ވެލި ނެގުމާއިބެހޭ ޤަވާއިދު',
     download: 'https://google.com',
-    form: 'https://forms.office.com/r/4y8CQHgeYi'
+    form: '/form'
   },
   {
     name: 'ބިލްބޯޑް ބެހެއްޓުމާއިބެހޭ ޤަވާއިދު',
     download: 'https://google.com',
-    form: 'https://forms.office.com/r/4y8CQHgeYi'
+    form: '/form'
   }
 ]
 

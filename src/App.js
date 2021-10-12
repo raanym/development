@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import './App.css';
 import FormPage from "./pages/FormPage";
 import Feedback from "./components/Feedback/Feedback";
+import EmbedForm from "./components/Forms/EmbedForm";
 
 function App(props) {
 
@@ -71,6 +72,7 @@ function App(props) {
           {UI}
         </Route>
         <Route path='/area-development' component={FormPage} />
+        <Route path='/form' component={EmbedForm} />
       </Switch>
     </React.Fragment>
   );
