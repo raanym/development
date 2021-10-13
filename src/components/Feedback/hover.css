@@ -1,0 +1,30 @@
+.hoverEffect li a {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #255db8, #2b6bd1 50%, #3882f6 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: all 0.2s ease-in-out;
+}
+.hoverEffect li a:before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 5px;
+  left: 0;
+  bottom: -5px;
+  z-index: 0;
+  position: absolute;
+  background: #2b6bd1;
+  transition: all 0.2s ease-in-out;
+}
+.hoverEffect li a:hover {
+  background-position: 0%;
+}
+.hoverEffect li a:hover:before {
+  width: 100%;
+}

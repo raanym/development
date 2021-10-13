@@ -10,7 +10,7 @@ const OpenForFeedback = () => {
   return (
     <div className='relative sm:flex sm:justify-between md:justify-start'>
       <div>
-        <h2 className='text-4xl my-4 py-4 font-waheed'>ޚިޔާލަށް ހުޅުވިފައި</h2>
+        <h2 className='text-3xl my-4 py-4 font-waheed'>ޚިޔާލަށް ހުޅުވިފައި</h2>
         <GavaaidhuMain />
         <Other />
       </div>

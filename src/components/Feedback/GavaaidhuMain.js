@@ -1,5 +1,5 @@
 import Gavaaidhu from "./Gavaaidhu";
-import MassalaSurvey from "../MassalaSurvey";
+import './hover.css';
 
 const data = [
   {
@@ -13,7 +13,7 @@ const data = [
     form: '/form'
   },
   {
-    name: 'ވެލި ނެގުމާއިބެހޭ ޤަވާއިދު',
+    name: 'ވެލި ނެގުމާއި ބެހޭ ޤަވާއިދު',
     download: 'https://google.com',
     form: '/form'
   },
@@ -28,12 +28,12 @@ const GavaaidhuMain = () => {
 
 
   return (
-    <div className='font-waheed'>
-      <div>
+    <div className='font-waheed relative'>
+      <ul className='hoverEffect'>
         {data.map(_data => {
           return <Gavaaidhu name={_data.name} download={_data.download} form={_data.form} />
         })}
-      </div>
+      </ul>
     </div>
   )
 }
