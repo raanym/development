@@ -63,6 +63,18 @@ function App(props) {
     <Footer />
   </React.Fragment >;
 
+  const routes =
+    <React.Fragment>
+      <Route path='/area-development' component={FormPage} />
+      <Route path='/proposals-and-regulations-form'>
+        <EmbedForm src='https://forms.office.com/Pages/ResponsePage.aspx?id=bh8sE-4Yyk2WXGiCYR05egGMLM-tDKxGtpZcj-zGW6tUNkNZWFQ5NTdBU0xWNDIwWEpIR1NNSk5MNC4u&embed=true' />
+      </Route>
+      <Route path='/general-feedback'>
+        <EmbedForm src='https://forms.office.com/Pages/ResponsePage.aspx?id=bh8sE-4Yyk2WXGiCYR05egGMLM-tDKxGtpZcj-zGW6tUMDMxREgxM1JaUjFXRjZLT0ZFWVhHUjUySC4u&embed=true' />
+      </Route>
+    </React.Fragment>
+
+
   const [UI, setUI] = useState(currentUI);
 
   return (
@@ -71,8 +83,7 @@ function App(props) {
         <Route path='/' exact>
           {UI}
         </Route>
-        <Route path='/area-development' component={FormPage} />
-        <Route path='/form' component={EmbedForm} />
+        {routes}
       </Switch>
     </React.Fragment>
   );

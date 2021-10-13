@@ -7,9 +7,13 @@ import { ReactComponent as FeedbackIcon } from '../../img/feedback-customer.svg'
 
 const OpenForFeedback = () => {
 
+  const styles = {
+
+  }
+
   return (
-    <div className='relative sm:flex sm:justify-between md:justify-start'>
-      <div>
+    <div className='relative sm:flex sm:justify-between md:justify-start sm:flex-wrap'>
+      <div className='sm:w-1/2 lg:w-2/3'>
         <h2 className='text-3xl my-4 py-4 font-waheed'>ޚިޔާލަށް ހުޅުވިފައި</h2>
         <GavaaidhuMain />
         <Other />
