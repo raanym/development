@@ -4,7 +4,7 @@ import OpenForFeedback from "./OpenForFeedback";
 const Feedback = () => {
 
   return (
-    <div className='pb-10 md:pb-20 bg-gray-100 sm:px-6 lg:px-80 px-4 pt-5'>
+    <div className='pb-10 md:pb-20 bg-gray-100 sm:px-6 lg:w-8/12 mx-auto px-4 lg:px-0 pt-5'>
       <OpenForFeedback />
       <ClosedFeedback />
     </div>

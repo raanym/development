@@ -56,12 +56,12 @@ function App(props) {
   //   <Footer />
   // </React.Fragment >;
 
-  const currentUI = <React.Fragment>
+  const currentUI = <div className='bg-gray-100'>
     <Header />
     <ShowCase />
     <Feedback />
     <Footer />
-  </React.Fragment >;
+  </div >;
 
   const routes =
     <React.Fragment>
