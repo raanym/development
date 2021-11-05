@@ -66,7 +66,7 @@ function App(props) {
   const routes =
     <React.Fragment>
       <Route path='/area-development' component={FormPage} />
-      <Route path='/proposals-and-regulations-form'>
+      <Route path='/feedback-on-council-papers'>
         <EmbedForm src='https://forms.office.com/Pages/ResponsePage.aspx?id=bh8sE-4Yyk2WXGiCYR05egGMLM-tDKxGtpZcj-zGW6tUNkNZWFQ5NTdBU0xWNDIwWEpIR1NNSk5MNC4u&embed=true' />
       </Route>
       <Route path='/general-feedback'>
