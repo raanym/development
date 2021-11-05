@@ -22,7 +22,7 @@ const ClosedFeedback = () => {
   return (
     <div className='relative mt-10 flex justify-between md:justify-start'>
       <div>
-        <h2 className='text-4xl my-4 font-waheed'>ނިމިފައިހުރި  ކަންކަން</h2>
+        <h2 className='text-3xl my-4 font-waheed'>ނިމިފައިހުރި  ކަންކަން</h2>
         <ul className='flex flex-col hoverEffect'>
           {data.map(link => {
             return <ClosedFeedBackLink href={link.link}>{link.name}</ClosedFeedBackLink>;
