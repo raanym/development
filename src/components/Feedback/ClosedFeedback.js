@@ -3,14 +3,14 @@ import { ReactComponent as CompletedIcon } from '../../img/completed.svg';
 import './hover.css';
 
 const data = [
-  {
-    link: 'https://google.com',
-    name: 'ބިދޭސީންނާއި ބެހޭ ޤަވާއިދު'
-  },
-  {
-    link: 'https://google.com',
-    name: 'ޕާކިންގ ޤަވާއިދު'
-  }
+  // {
+  //   link: 'https://google.com',
+  //   name: 'ބިދޭސީންނާއި ބެހޭ ޤަވާއިދު'
+  // },
+  // {
+  //   link: 'https://google.com',
+  //   name: 'ޕާކިންގ ޤަވާއިދު'
+  // }
 ]
 
 const ClosedFeedBackLink = (props) => {
