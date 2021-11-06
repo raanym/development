@@ -4,7 +4,7 @@ import './hover.css';
 const data = [
   {
     name: 'ތަރައްޤީގެ ޕްލޭނަށް ޚިޔާލު ހޯދުން ',
-    download: 'https://download.fuvahmulah.gov.mv/files/Fuvahmulah%20Development%20Plan%202022%20-%202026%20%20-%20Public%20Opinion.pdf',
+    download: 'https://download.fuvahmulah.gov.mv/files/Fuvahmulah Development Plan 2022 - 2026  - Public Opinion.docx',
     form: '/feedback-on-council-papers'
   },
 ]
